@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="cart">
+        <h2>Корзина</h2>
+
+        <div id="cart"></div>
+    </div>
+
+    <div class="shop">
+        <div class="box">
+            <h2>Горящие товары</h2>
+
+            <ul class="flash-deals" id="flash-deals">
+                <li>Loading...</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>Товары</h2>
+
+            <label>
+                <input id="filter" type="text" class="filter" placeholder="Введите название товара...">
+            </label>
+
+            <ul class="products" id="products">
+                <li>Loading...</li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="productService.js"></script>
+<script src="cartService.js"></script>
+<script src="htmlService.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

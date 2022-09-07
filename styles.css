@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px/1.2rem sans-serif;
+}
+
+h2 {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.error {
+  color: red;
+}
+
+hr {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  background: #ccc;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 5rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.box {
+  margin-bottom: 5rem;
+}
+
+.cart {
+  position: sticky;
+  top: 0;
+  width: 400px;
+  padding: 1rem;
+}
+
+.shop {
+  padding: 1rem;
+  max-width: 800px;
+  border-left: 1px solid #ccc;
+}
+
+.products {
+  display: grid;
+  justify-items: stretch;
+  align-items: stretch;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.goods {
+  border: 1px solid #eee;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 5px;
+}
+.goods:hover {
+  cursor: pointer;
+  background: #eee;
+  transition: background-color 0.3s;
+}
+.goods img {
+  height: 130px;
+  object-fit: contain;
+  max-width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 5px;
+}
+.goods img + small {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  height: 3.6rem;
+  overflow: hidden;
+}
+.goods img ~ * {
+  margin-top: 1rem;
+}
+.goods button {
+  width: 100%;
+}
+
+.flash-deals {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  overflow: auto;
+}
+.flash-deals .goods {
+  min-width: 160px;
+}
+.flash-deals .goods:hover {
+  cursor: default;
+}
+
+.filter {
+  margin-bottom: 1rem;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+.cart-list {
+  list-style: none;
+}
+.cart-list li {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+.cart-list:hover {
+  background: #eee;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn {
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  background: darkred;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.btn:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.counter input {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  width: 40px;
+  height: 2rem;
+  text-align: center;
+}
+.counter input::-webkit-outer-spin-button, .counter input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.counter button {
+  font-size: 1.4rem;
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  border-radius: 100%;
+  background: #ccc;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=styles.css.map */
